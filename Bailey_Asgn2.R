@@ -52,3 +52,11 @@ dev.off()
 #Multiple regression including species
 Regression2 <-lm(body_mass_g ~ flipper_length_mm + species, data = penguins)
 summary(Regression2)
+
+#Added plot for test branch
+png("bodymass_histogram.png")
+hist(penguins$body_mass_g,
+     col = "lightblue",
+     main = "Distribution of Penguin Body Mass",
+     xlab = "Body Mass (g)")
+dev.off()
